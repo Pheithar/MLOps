@@ -119,7 +119,6 @@ class TrainOREvaluate(object):
         print(f"Model accuracy: {running_acc/len(test_set)*100:.2f}%")
             
 
-
 if __name__ == '__main__':
     TrainOREvaluate()
     

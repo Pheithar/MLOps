@@ -6,11 +6,6 @@ from torch.utils.data import TensorDataset, DataLoader
 from torchvision import transforms
 from torchvision.io import read_image
 
-import pandas as pd
-
-
-import matplotlib.pyplot as plt
-
 ''' 
 mnist is the dataset with the corrupted mnist
 Args:
@@ -53,5 +48,3 @@ def mnist(batch_size: int = 8):
                       batch_size=batch_size)
 
     return train, test
-
-mnist()
