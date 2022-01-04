@@ -10,6 +10,12 @@ from torchvision import transforms
 
 
 class Evaluate(object):
+    """
+    Evaulate()
+
+    takes the desired arguments from the standart input and predict with a model. Can predict from a folder or from a .npy file
+    """
+
     def __init__(self):
         print("Evaluating until hitting the ceiling")
         parser = argparse.ArgumentParser(description="Training arguments")
@@ -29,6 +35,7 @@ class Evaluate(object):
             to_predict = []
             for image in os.listdir(args.load_data_from):
                 img = Image.open(os.path.join(args.load_data_from, image))
+                # Convert image to black and white
                 img = img.convert("L")
                 to_predict.append(toTensor(img))
         # NPY

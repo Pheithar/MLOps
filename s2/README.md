@@ -51,6 +51,32 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
+--------
+
+# Script Description
+
+ - `train_model`: Used to train the network. It accepts optional flags for `lr` and `epochs`.
+
+```
+python src/models/train_model.py --lr 0.0001 --epochs 10
+```
+
+ - `predict_model`: Used to predict model. Needs the model and either a folder with images or a `.npy` file.
+
+```
+ python src/models/predict_model.py load_model_from model.pt load_data_from folder
+```
+
+ - `visualize`: Visualize the features of the model over the training data in the last hidden layer.
+
+ ```
+ python src/visualization/visualize.py
+ ```
+ 
+
+ ## Typing exercise
+
+ It is in `src/features`
 
 --------
 
