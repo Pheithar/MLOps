@@ -1,0 +1,5 @@
+experiment1:
+  datapath: data/processed/corruptmnist/train.pt
+  lr: 0.0001
+  epochs: 10
+  seed: 42

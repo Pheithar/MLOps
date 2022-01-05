@@ -71,7 +71,7 @@ class Train(object):
         plt.ylabel("Loss")
         plt.plot(range(1, args.epochs + 1), plot_loss)
         plt.savefig("reports/figures/training.png")
-        plt.show()
+        plt.close()
 
         torch.save(model.state_dict(), "models/mnist/model.pt")
 

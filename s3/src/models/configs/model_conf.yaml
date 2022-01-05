@@ -1,0 +1,4 @@
+model:
+  inputshape: 784
+  hiddenlayer: [512, 256]
+  outputshape: 10
