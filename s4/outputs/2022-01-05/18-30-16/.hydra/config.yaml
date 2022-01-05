@@ -1,0 +1,14 @@
+configs:
+  training:
+    datapath: /data/processed/corruptmnist/train.pt
+    epochs: 5
+    seed: 42
+    figurepath: /reports/figures/training.png
+    modelpath: /models/mnist/
+  model:
+    inputshape: 784
+    hiddenlayer:
+    - 512
+    - 256
+    outputshape: 10
+    lr: 0.0001
