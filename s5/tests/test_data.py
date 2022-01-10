@@ -1,5 +1,7 @@
 import sys
 sys.path.insert(1, 'src/data/')
+sys.path.insert(1, 's5/src/data/')
+
 
 from make_dataset import mnist
 trainset, testset = mnist("data/raw", "data/processed")

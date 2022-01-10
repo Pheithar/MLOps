@@ -1,6 +1,8 @@
 import sys
 
 sys.path.insert(1, 'src/models/')
+sys.path.insert(1, 's5/src/models/')
+
 
 from model import MyAwesomeModel
 import torch
