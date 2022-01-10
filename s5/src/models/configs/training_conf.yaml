@@ -1,0 +1,6 @@
+training:
+  datapath: /data/processed/corruptmnist/train.pt
+  epochs: 2
+  seed: 42
+  figurepath: /reports/figures/training.png
+  modelpath: /models/mnist/
