@@ -1,4 +1,6 @@
 [core]
-    remote = storage
+    remote = remote_storage
 ['remote "storage"']
     url = gdrive://1rhathSow6M4uJBOjYyLYBUTkQPTilvou
+['remote "remote_storage"']
+    url = gs://test-bucket-mlops-course/
